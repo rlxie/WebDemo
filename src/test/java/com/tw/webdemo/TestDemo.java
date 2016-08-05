@@ -5,6 +5,7 @@ import com.tw.webdemo.Demo;
 import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import org.junit.Assert.*;
 
@@ -21,6 +22,7 @@ public class TestDemo {
     }
 
     @Test
+    @Category(com.tw.webdemo.Demo.class)
     public void TestSayHi(){
         Assert.assertEquals("Hi,ray", demo.sayHi("ray"));
     }
